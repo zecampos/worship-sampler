@@ -6,6 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9503FD8E2E4645FC007D7BF7 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FD8D2E4645FC007D7BF7 /* tick.mp3 */; };
+		9503FD9F2E464C51007D7BF7 /* hihat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9503FD9E2E464C51007D7BF7 /* hihat.wav */; };
+		9503FDA12E464C95007D7BF7 /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDA02E464C95007D7BF7 /* kick.wav */; };
+		9503FDA32E464D16007D7BF7 /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDA22E464D16007D7BF7 /* snare.wav */; };
+		9503FDA52E464D49007D7BF7 /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDA42E464D49007D7BF7 /* clap.wav */; };
+		9503FDA72E464D8F007D7BF7 /* LongKick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDA62E464D8F007D7BF7 /* LongKick.wav */; };
+		9503FDA92E464DE0007D7BF7 /* Tambourin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDA82E464DE0007D7BF7 /* Tambourin.wav */; };
+		9503FDB82E465F54007D7BF7 /* pad_C.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDAF2E465F54007D7BF7 /* pad_C.mp3 */; };
+		9503FDB92E465F54007D7BF7 /* pad_A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDAC2E465F54007D7BF7 /* pad_A.mp3 */; };
+		9503FDBA2E465F54007D7BF7 /* pad_F.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB42E465F54007D7BF7 /* pad_F.mp3 */; };
+		9503FDBB2E465F54007D7BF7 /* pad_E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB32E465F54007D7BF7 /* pad_E.mp3 */; };
+		9503FDBC2E465F54007D7BF7 /* pad_G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB62E465F54007D7BF7 /* pad_G.mp3 */; };
+		9503FDBD2E465F54007D7BF7 /* pad_B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDAE2E465F54007D7BF7 /* pad_B.mp3 */; };
+		9503FDBE2E465F54007D7BF7 /* pad_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB52E465F54007D7BF7 /* pad_FSharp.mp3 */; };
+		9503FDBF2E465F54007D7BF7 /* pad_GSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB72E465F54007D7BF7 /* pad_GSharp.mp3 */; };
+		9503FDC02E465F54007D7BF7 /* pad_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB02E465F54007D7BF7 /* pad_CSharp.mp3 */; };
+		9503FDC12E465F54007D7BF7 /* pad_DSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB22E465F54007D7BF7 /* pad_DSharp.mp3 */; };
+		9503FDC22E465F54007D7BF7 /* pad_D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB12E465F54007D7BF7 /* pad_D.mp3 */; };
+		9503FDC32E465F54007D7BF7 /* pad_ASharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDAD2E465F54007D7BF7 /* pad_ASharp.mp3 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9503FD6E2E4644BA007D7BF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +49,25 @@
 		9503FD5D2E4644B8007D7BF7 /* worship-sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "worship-sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9503FD6D2E4644BA007D7BF7 /* worship-samplerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "worship-samplerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9503FD772E4644BA007D7BF7 /* worship-samplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "worship-samplerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9503FD8D2E4645FC007D7BF7 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
+		9503FD9E2E464C51007D7BF7 /* hihat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hihat.wav; sourceTree = "<group>"; };
+		9503FDA02E464C95007D7BF7 /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
+		9503FDA22E464D16007D7BF7 /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
+		9503FDA42E464D49007D7BF7 /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
+		9503FDA62E464D8F007D7BF7 /* LongKick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LongKick.wav; sourceTree = "<group>"; };
+		9503FDA82E464DE0007D7BF7 /* Tambourin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tambourin.wav; sourceTree = "<group>"; };
+		9503FDAC2E465F54007D7BF7 /* pad_A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_A.mp3; sourceTree = "<group>"; };
+		9503FDAD2E465F54007D7BF7 /* pad_ASharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_ASharp.mp3; sourceTree = "<group>"; };
+		9503FDAE2E465F54007D7BF7 /* pad_B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_B.mp3; sourceTree = "<group>"; };
+		9503FDAF2E465F54007D7BF7 /* pad_C.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_C.mp3; sourceTree = "<group>"; };
+		9503FDB02E465F54007D7BF7 /* pad_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_CSharp.mp3; sourceTree = "<group>"; };
+		9503FDB12E465F54007D7BF7 /* pad_D.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_D.mp3; sourceTree = "<group>"; };
+		9503FDB22E465F54007D7BF7 /* pad_DSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_DSharp.mp3; sourceTree = "<group>"; };
+		9503FDB32E465F54007D7BF7 /* pad_E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_E.mp3; sourceTree = "<group>"; };
+		9503FDB42E465F54007D7BF7 /* pad_F.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_F.mp3; sourceTree = "<group>"; };
+		9503FDB52E465F54007D7BF7 /* pad_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_FSharp.mp3; sourceTree = "<group>"; };
+		9503FDB62E465F54007D7BF7 /* pad_G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_G.mp3; sourceTree = "<group>"; };
+		9503FDB72E465F54007D7BF7 /* pad_GSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_GSharp.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,6 +120,25 @@
 				9503FD702E4644BA007D7BF7 /* worship-samplerTests */,
 				9503FD7A2E4644BA007D7BF7 /* worship-samplerUITests */,
 				9503FD5E2E4644B8007D7BF7 /* Products */,
+				9503FD8D2E4645FC007D7BF7 /* tick.mp3 */,
+				9503FD9E2E464C51007D7BF7 /* hihat.wav */,
+				9503FDAC2E465F54007D7BF7 /* pad_A.mp3 */,
+				9503FDAD2E465F54007D7BF7 /* pad_ASharp.mp3 */,
+				9503FDAE2E465F54007D7BF7 /* pad_B.mp3 */,
+				9503FDAF2E465F54007D7BF7 /* pad_C.mp3 */,
+				9503FDB02E465F54007D7BF7 /* pad_CSharp.mp3 */,
+				9503FDB12E465F54007D7BF7 /* pad_D.mp3 */,
+				9503FDB22E465F54007D7BF7 /* pad_DSharp.mp3 */,
+				9503FDB32E465F54007D7BF7 /* pad_E.mp3 */,
+				9503FDB42E465F54007D7BF7 /* pad_F.mp3 */,
+				9503FDB52E465F54007D7BF7 /* pad_FSharp.mp3 */,
+				9503FDB62E465F54007D7BF7 /* pad_G.mp3 */,
+				9503FDB72E465F54007D7BF7 /* pad_GSharp.mp3 */,
+				9503FDA02E464C95007D7BF7 /* kick.wav */,
+				9503FDA22E464D16007D7BF7 /* snare.wav */,
+				9503FDA42E464D49007D7BF7 /* clap.wav */,
+				9503FDA62E464D8F007D7BF7 /* LongKick.wav */,
+				9503FDA82E464DE0007D7BF7 /* Tambourin.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +272,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9503FDB82E465F54007D7BF7 /* pad_C.mp3 in Resources */,
+				9503FDB92E465F54007D7BF7 /* pad_A.mp3 in Resources */,
+				9503FDBA2E465F54007D7BF7 /* pad_F.mp3 in Resources */,
+				9503FDBB2E465F54007D7BF7 /* pad_E.mp3 in Resources */,
+				9503FDBC2E465F54007D7BF7 /* pad_G.mp3 in Resources */,
+				9503FDBD2E465F54007D7BF7 /* pad_B.mp3 in Resources */,
+				9503FDBE2E465F54007D7BF7 /* pad_FSharp.mp3 in Resources */,
+				9503FDBF2E465F54007D7BF7 /* pad_GSharp.mp3 in Resources */,
+				9503FDC02E465F54007D7BF7 /* pad_CSharp.mp3 in Resources */,
+				9503FDC12E465F54007D7BF7 /* pad_DSharp.mp3 in Resources */,
+				9503FDC22E465F54007D7BF7 /* pad_D.mp3 in Resources */,
+				9503FDC32E465F54007D7BF7 /* pad_ASharp.mp3 in Resources */,
+				9503FDA12E464C95007D7BF7 /* kick.wav in Resources */,
+				9503FDA72E464D8F007D7BF7 /* LongKick.wav in Resources */,
+				9503FD8E2E4645FC007D7BF7 /* tick.mp3 in Resources */,
+				9503FDA52E464D49007D7BF7 /* clap.wav in Resources */,
+				9503FDA92E464DE0007D7BF7 /* Tambourin.wav in Resources */,
+				9503FDA32E464D16007D7BF7 /* snare.wav in Resources */,
+				9503FD9F2E464C51007D7BF7 /* hihat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
