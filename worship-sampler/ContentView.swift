@@ -42,7 +42,7 @@ struct ContentView: View {
                 }
             
             // Aba 3: Drum Sampler
-            DrumSamplerView(pads: samplerPads,engine: samplerEngine)
+            DrumSamplerView(engine: samplerEngine, pads: samplerPads)
                 .tabItem {
                     Label("Sampler", systemImage: "squares.below.rectangle")
                 }

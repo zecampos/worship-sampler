@@ -26,6 +26,7 @@
 		9503FDC12E465F54007D7BF7 /* pad_DSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB22E465F54007D7BF7 /* pad_DSharp.mp3 */; };
 		9503FDC22E465F54007D7BF7 /* pad_D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDB12E465F54007D7BF7 /* pad_D.mp3 */; };
 		9503FDC32E465F54007D7BF7 /* pad_ASharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9503FDAD2E465F54007D7BF7 /* pad_ASharp.mp3 */; };
+		958A17582E47A0A300805D17 /* accent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 958A17572E47A0A000805D17 /* accent.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		9503FDB52E465F54007D7BF7 /* pad_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_FSharp.mp3; sourceTree = "<group>"; };
 		9503FDB62E465F54007D7BF7 /* pad_G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_G.mp3; sourceTree = "<group>"; };
 		9503FDB72E465F54007D7BF7 /* pad_GSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pad_GSharp.mp3; sourceTree = "<group>"; };
+		958A17572E47A0A000805D17 /* accent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = accent.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -130,6 +132,7 @@
 				9503FDB12E465F54007D7BF7 /* pad_D.mp3 */,
 				9503FDB22E465F54007D7BF7 /* pad_DSharp.mp3 */,
 				9503FDB32E465F54007D7BF7 /* pad_E.mp3 */,
+				958A17572E47A0A000805D17 /* accent.mp3 */,
 				9503FDB42E465F54007D7BF7 /* pad_F.mp3 */,
 				9503FDB52E465F54007D7BF7 /* pad_FSharp.mp3 */,
 				9503FDB62E465F54007D7BF7 /* pad_G.mp3 */,
@@ -280,6 +283,7 @@
 				9503FDBD2E465F54007D7BF7 /* pad_B.mp3 in Resources */,
 				9503FDBE2E465F54007D7BF7 /* pad_FSharp.mp3 in Resources */,
 				9503FDBF2E465F54007D7BF7 /* pad_GSharp.mp3 in Resources */,
+				958A17582E47A0A300805D17 /* accent.mp3 in Resources */,
 				9503FDC02E465F54007D7BF7 /* pad_CSharp.mp3 in Resources */,
 				9503FDC12E465F54007D7BF7 /* pad_DSharp.mp3 in Resources */,
 				9503FDC22E465F54007D7BF7 /* pad_D.mp3 in Resources */,

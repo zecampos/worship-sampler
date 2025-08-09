@@ -1,39 +1,56 @@
 import Foundation
-import AVFoundation // Framework da Apple para áudio e vídeo
+import AVFoundation
 
 class MetronomeEngine: ObservableObject {
-    // @Published para que a View possa observar essas propriedades
     @Published var bpm: Double = 120.0
     @Published var isPlaying: Bool = false
-    @Published var pan: Float = 0.0 // -1.0 (L) para 1.0 (R)
+    @Published var pan: Float = 0.0
+    @Published var isAccentEnabled: Bool = true // Começa ligado por padrão
     
+    // --- NOVAS PROPRIEDADES ---
+    @Published var beatsPerMeasure: Int = 4 // Para o 4/4, 3/4, etc.
+    private var currentBeat: Int = 0 // Contador interno de batidas
+
     private var timer: Timer?
-    private var audioPlayer: AVAudioPlayer?
+    // --- DOIS PLAYERS DE ÁUDIO ---
+    private var regularTickPlayer: AVAudioPlayer?
+    private var accentTickPlayer: AVAudioPlayer?
 
     init() {
-        setupAudioPlayer()
+        setupAudioPlayers()
     }
-    
 
-    private func setupAudioPlayer() {
-        // MUITO IMPORTANTE: Mude "seu_som" para o nome exato do seu arquivo de áudio
-        // e "mp3" para a extensão correta (.wav, etc.)
-        guard let soundURL = Bundle.main.url(forResource: "tick", withExtension: "mp3") else {
-            print("ARQUIVO DE SOM DO METRÔNOMO NÃO ENCONTRADO! Verifique o nome e a extensão.")
+    private func setupAudioPlayers() {
+        // Carrega o som do tick normal
+        guard let regularTickURL = Bundle.main.url(forResource: "tick", withExtension: "mp3") else {
+            print("Não foi possível encontrar o arquivo: tick.mp3")
             return
         }
-        print("Arquivo de som do metrônomo encontrado em: \(soundURL)")
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-            audioPlayer?.prepareToPlay()
-            print("Player de áudio do metrônomo configurado com sucesso!")
+            regularTickPlayer = try AVAudioPlayer(contentsOf: regularTickURL)
+            regularTickPlayer?.prepareToPlay()
         } catch {
-            print("Erro ao carregar o player de áudio: \(error.localizedDescription)")
+            print("Erro ao carregar o tick regular: \(error.localizedDescription)")
+        }
+        
+        // Carrega o som do tick acentuado
+        // MUDE "accent_tick.wav" para o nome do seu arquivo de acento
+        guard let accentTickURL = Bundle.main.url(forResource: "accent", withExtension: "mp3") else {
+            print("Não foi possível encontrar o arquivo de acento.")
+            return
+        }
+        do {
+            accentTickPlayer = try AVAudioPlayer(contentsOf: accentTickURL)
+            accentTickPlayer?.prepareToPlay()
+        } catch {
+            print("Erro ao carregar o tick de acento: \(error.localizedDescription)")
         }
     }
 
     func start() {
         guard !isPlaying else { return }
+        
+        currentBeat = 0 // Reseta a contagem sempre que começa a tocar
         isPlaying = true
         
         let timeInterval = 60.0 / bpm
@@ -48,15 +65,29 @@ class MetronomeEngine: ObservableObject {
         timer = nil
     }
 
+    // --- LÓGICA DE CONTAGEM E ACENTO ---
     private func playTick() {
-        audioPlayer?.pan = self.pan // Define o pan antes de tocar
-        audioPlayer?.currentTime = 0
-        audioPlayer?.play()
-    }
-    // Adicionamos uma função para reiniciar o timer quando o BPM muda manualmente
-    func resetTimer() {
-    self.stop()
-    self.start()
+        currentBeat = (currentBeat % beatsPerMeasure) + 1
+        
+        // AQUI ESTÁ A NOVA LÓGICA:
+        // Toca o acento SÓ SE isAccentEnabled for verdadeiro E for a batida 1
+        if isAccentEnabled && currentBeat == 1 {
+            accentTickPlayer?.pan = self.pan
+            accentTickPlayer?.currentTime = 0
+            accentTickPlayer?.play()
+        } else {
+            // Em todos os outros casos, toca o tick normal
+            regularTickPlayer?.pan = self.pan
+            regularTickPlayer?.currentTime = 0
+            regularTickPlayer?.play()
+        }
     }
     
+    func resetTimer() {
+        // Para, e imediatamente começa de novo com as novas configurações (BPM)
+        self.stop()
+        self.start()
+    }
+    
+    // ... (a função resetTimer continua a mesma) ...
 }

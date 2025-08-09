@@ -1,13 +1,6 @@
 import SwiftUI
 
 
-// A struct NotePad não muda
-struct NotePad: Identifiable, Hashable {
-    let id = UUID()
-    let name: String
-    let soundFileName: String
-}
-
 struct ContinuousPadView: View {
     // Criamos o nosso motor para o pad
     @ObservedObject var engine: ContinuousPadEngine

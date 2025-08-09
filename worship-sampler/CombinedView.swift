@@ -28,7 +28,7 @@ struct CombinedView: View {
                     // Aqui, em vez de recriar a View inteira,
                     // podemos só colocar os controles essenciais.
                     // Mas para simplificar, vamos reutilizar a View que já temos.
-                    DrumSamplerView(pads: samplerPads, engine: samplerEngine)
+                    DrumSamplerView(engine: samplerEngine, pads: samplerPads )
                 }
                 
                 // --- Seção do Pad Contínuo ---
